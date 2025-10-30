@@ -13,9 +13,9 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
 ) ENGINE=InnoDB";
 
 if ($conn->query($sql) === TRUE) {
-    echo "✅ Table 'users' berhasil dibuat.";
+    echo "Table 'users' berhasil dibuat.";
 } else {
-    echo "❌ Error: " . $conn->error;
+    echo "Error: " . $conn->error;
 }
 
 $conn->close();

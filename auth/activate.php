@@ -27,15 +27,15 @@ if (isset($_GET['code'])) {
                     window.location.href='login.php';
                   </script>";
         } else {
-            echo "❌ Gagal mengupdate status user.";
+            echo "Gagal mengupdate status user.";
         }
     } else {
-        echo "❌ Token tidak valid atau sudah digunakan.";
+        echo "Token tidak valid atau sudah digunakan.";
     }
 
     $stmt->close();
 } else {
-    echo "❌ Token aktivasi tidak ditemukan.";
+    echo "Token aktivasi tidak ditemukan.";
 }
 
 $conn->close();

@@ -8,7 +8,7 @@ $success = '';
 
 // Cek notifikasi dari redirect (misal setelah ubah password)
 if (isset($_GET['msg']) && $_GET['msg'] === 'pass_changed') {
-    $success = "✅ Password berhasil diubah. Silakan login.";
+    $success = "Password berhasil diubah. Silakan login.";
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

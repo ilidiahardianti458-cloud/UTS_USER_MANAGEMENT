@@ -46,9 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 ";
 
                 $mail->send();
-                echo "<p>✅ Registrasi berhasil! Cek email kamu untuk aktivasi.</p>";
+                echo "<p>Registrasi berhasil! Cek email kamu untuk aktivasi.</p>";
             } catch (Exception $e) {
-                echo "<p>⚠️ Email gagal dikirim. Error: {$mail->ErrorInfo}</p>";
+                echo "<p>Email gagal dikirim. Error: {$mail->ErrorInfo}</p>";
             }
         } else {
             echo "Terjadi kesalahan pada server.";

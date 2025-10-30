@@ -1,5 +1,4 @@
 <?php
-// dashboard/index.php
 session_start();
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../auth/login.php");
@@ -25,7 +24,8 @@ if (!isset($_SESSION['user_id'])) {
 
 <div class="container">
   <h2>Dashboard Admin Gudang</h2>
-  <p>Gunakan menu untuk mengelola produk dan profil.</p>
+  <p>Gunakan menu untuk mengelola produk dan profil, 
+    yang dimana gudang ini memuat semua produk yang ada</p>
 </div>
 </body>
 </html>

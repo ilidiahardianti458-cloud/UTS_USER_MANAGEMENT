@@ -14,9 +14,9 @@ $sql = "CREATE TABLE IF NOT EXISTS products (
 ) ENGINE=InnoDB";
 
 if ($conn->query($sql) === TRUE) {
-    echo "✅ Table 'products' berhasil dibuat.";
+    echo "Table 'products' berhasil dibuat.";
 } else {
-    echo "❌ Error: " . $conn->error;
+    echo "Error: " . $conn->error;
 }
 
 $conn->close();

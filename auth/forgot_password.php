@@ -49,9 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p>Link berlaku 1 jam. Jika bukan kamu, abaikan email ini.</p>
                 ";
                 $mail->send();
-                $success = "✅ Link reset password telah dikirim ke email Anda.";
+                $success = "Link reset password telah dikirim ke email Anda.";
             } catch (Exception $e) {
-                $success = "⚠️ Email gagal dikirim. Gunakan tautan ini: <a href='$link'>$link</a>";
+                $success = "Email gagal dikirim. Gunakan tautan ini: <a href='$link'>$link</a>";
             }
         } else {
             $error = "Email tidak ditemukan atau akun belum aktif.";

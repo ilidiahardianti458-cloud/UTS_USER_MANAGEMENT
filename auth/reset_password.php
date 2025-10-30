@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $token) {
         if (!$stmt) { die("Prepare failed: " . $conn->error); }
         $stmt->bind_param("ss", $hash, $email);
         if ($stmt->execute()) {
-            $success = "✅ Password berhasil diubah. <a href='login.php'>Login sekarang</a>.";
+            $success = "Password berhasil diubah. <a href='login.php'>Login sekarang</a>.";
             $token = ''; // agar form hilang
         } else {
             $error = "Gagal mengubah password.";
